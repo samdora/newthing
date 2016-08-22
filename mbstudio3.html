@@ -5,7 +5,7 @@
     <title></title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.20.1/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.20.1/mapbox-gl.css' rel='stylesheet' />
+    <link href='sp-mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -15,7 +15,8 @@
 
 <style>
     .mapboxgl-popup {
-        max-width: 400px;
+        max-width: 420px;
+        max-height: 620px;  
         font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     }
 </style>
@@ -38,7 +39,7 @@ map.on('load', function() {
             "features": [{
                 "type": "Feature",
                 "properties": {
-                    "description": "<img src='http://i.imgur.com/kk1J109.jpg' width = 640>",
+                    "description": "<img src='http://i.imgur.com/kk1J109.jpg' width = 400>",
                     "icon": "lodging"
                 },
                 "geometry": {
@@ -48,7 +49,7 @@ map.on('load', function() {
             },{
                 "type": "Feature",
                 "properties": {
-                    "description": "<img src='http://i.imgur.com/QGwvzDo.jpg' width = 640>",
+                    "description": "<img src='http://i.imgur.com/QGwvzDo.jpg' width = 240>",
                     "icon": "restaurant"
                 },
                 "geometry": {
@@ -57,10 +58,49 @@ map.on('load', function() {
                 }
             },
             
+            {
+                "type": "Feature",
+                "properties": {
+                    "description": "<a href='http://i.imgur.com/j7TjBfw.jpg' target='newwindow'><img src='http://i.imgur.com/j7TjBfw.jpg' width = 400 border=1></a><br>Iceland supporters pose for a photo",
+                    "icon": "attraction"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [5.395, 43.27]
+                }
+            },
+            
+            {
+                "type": "Feature",
+                "properties": {
+                    "description": "<img src='http://i.imgur.com/QGwvzDo.jpg' width = 400>",
+                    "icon": "bakery"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [4.171, 41.406]
+                }
+            },
+            
+            {
+                "type": "Feature",
+                "properties": {
+                    "description": "<img src='http://i.imgur.com/0gHekvv.jpg' width = 400>",
+                    "icon": "castle"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [5.449, 43.528]
+                }
+            },
+            
+            
+            
+            
              {
                 "type": "Feature",
                 "properties": {
-                    "description": "<img src='http://i.imgur.com/1lWg1Gp.jpg' width = 640>",
+                    "description": "<img src='http://i.imgur.com/1lWg1Gp.jpg' width = 400>",
                     "icon": "stadium"
                 },
                 "geometry": {
